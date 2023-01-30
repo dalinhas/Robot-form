@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.1 on win32)" generated="20230130 18:21:03.795" rpa="false" schemaversion="3">
+<suite id="s1" name="Form" source="C:\Users\Usuário\Desktop\robot-form\form.robot">
+<test id="s1-t1" name="cenario 1: Preencher formulário" line="15">
+<kw name="abrir navegador">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://itera-qa.azurewebsites.net/home/automation</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230130 18:21:04.283" level="INFO">Opening browser 'chrome' to base url 'https://itera-qa.azurewebsites.net/home/automation'.</msg>
+<status status="PASS" starttime="20230130 18:21:04.282" endtime="20230130 18:21:08.736"/>
+</kw>
+<status status="PASS" starttime="20230130 18:21:04.281" endtime="20230130 18:21:08.736"/>
+</kw>
+<kw name="preencher campos">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_name}</arg>
+<arg>Rosália</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230130 18:21:08.740" level="INFO">Typing text 'Rosália' into text field 'id:name'.</msg>
+<status status="PASS" starttime="20230130 18:21:08.738" endtime="20230130 18:21:09.035"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230130 18:21:11.036" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230130 18:21:09.035" endtime="20230130 18:21:11.036"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_phone}</arg>
+<arg>992742588</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230130 18:21:11.039" level="INFO">Typing text '992742588' into text field 'id:phone'.</msg>
+<status status="PASS" starttime="20230130 18:21:11.037" endtime="20230130 18:21:11.404"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230130 18:21:13.405" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230130 18:21:11.404" endtime="20230130 18:21:13.405"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_email}</arg>
+<arg>rosaliagoncalves915@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230130 18:21:13.407" level="INFO">Typing text 'rosaliagoncalves915@gmail.com' into text field 'id:email'.</msg>
+<status status="PASS" starttime="20230130 18:21:13.405" endtime="20230130 18:21:13.672"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230130 18:21:15.674" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230130 18:21:13.673" endtime="20230130 18:21:15.674"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_password}</arg>
+<arg>123456</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230130 18:21:15.675" level="INFO">Typing text '123456' into text field 'id:password'.</msg>
+<status status="PASS" starttime="20230130 18:21:15.674" endtime="20230130 18:21:15.855"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230130 18:21:17.857" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230130 18:21:15.855" endtime="20230130 18:21:17.857"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${textarea_address}</arg>
+<arg>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230130 18:21:17.858" level="INFO">Typing text 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx' into text field 'id:address'.</msg>
+<status status="PASS" starttime="20230130 18:21:17.857" endtime="20230130 18:21:18.096"/>
+</kw>
+<status status="PASS" starttime="20230130 18:21:08.737" endtime="20230130 18:21:18.096"/>
+</kw>
+<kw name="clicar em submit">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${button_submit}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230130 18:21:18.101" level="INFO">Clicking element 'name:submit'.</msg>
+<status status="PASS" starttime="20230130 18:21:18.099" endtime="20230130 18:21:18.228"/>
+</kw>
+<status status="PASS" starttime="20230130 18:21:18.098" endtime="20230130 18:21:18.228"/>
+</kw>
+<kw name=" fechar navegador">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230130 18:21:18.230" endtime="20230130 18:21:20.805"/>
+</kw>
+<status status="PASS" starttime="20230130 18:21:18.229" endtime="20230130 18:21:20.806"/>
+</kw>
+<status status="PASS" starttime="20230130 18:21:04.280" endtime="20230130 18:21:20.808"/>
+</test>
+<status status="PASS" starttime="20230130 18:21:03.799" endtime="20230130 18:21:20.814"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Form">Form</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
